@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MOOC网站首页</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <script src="js/setHomeSetFav.js" type="text/javascript" charset="gb2312"></script>
+    <script src="js/myfocus-2.0.1.min.js" type="text/javascript"></script>
+    <script src="js/mf-pattern/mF_fancy.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="js/mf-pattern/mF_fancy.css" type="text/css">
+    <script type="text/javascript">
+       myFocus.set({
+           id:'picBox'
+           /*这段代码用于描述制作焦点图
+           1.焦点图初始化的ID,与图片列表最外层的ID一直."picBox"
+           2.图标列表的外面,包裹一个class为pic的div
+           */
+       })
+    </script>
+</head>
+<body>
+<div class="top">
+    <div class="top_content">
+        <ul>
+            <li><a href="#" target="_blank">联系我们</li>
+            <li><a href="#" onclick="AddFavotite(window.location,document.title)">加入收藏</a></li>
+            <li><a href="#" onclick="SetHome(window.location)">设为首页</a></li>
+        </ul>
+    </div>
+</div>
+<!-- top结束-->
+<div class="wrap">
+    <div class="logo">
+        <div class="logo_left">
+            <img src="images/logo.jpg" alt="mooc" />
+        </div>
+        <div class="logo_right">
+            <img src="images/tel.jpg" alt="服务热线">24小时服务热线: <span class="tel">123-456-789</span>
+        </div>
+    </div>  <!-- logo结束 -->
+<div class="nav">
+    <div class="nav_left"></div>
+    <div class="nav_mid">
+        <div class="nav_mid_left">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="list.html">关于慕课</a></li>
+                <li><a href="list.html">新闻动态</a></li>
+                <li><a href="list.html">课程中心</a></li>
+                <li><a href="list.html">在线课程</a></li>
+                <li><a href="list.html">人才招聘</a></li>  
+            </ul>
+        </div>
+        <div class="nav_mid_right">
+            <form action="" method="post">
+                <input type="text"class="search_text" />
+            </form>
+        </div>
+    </div>
+    <div class="nav_right"></div>
+</div>     <!-- nav结束 -->
+<div class="ad" id="picBox"> 
+    <div class="loading"><img src="images/loading.gif" alt=""></div>
+    <div class="pic">
+       <ul>
+          <li><img src="images/ad2.jpg" /></li>
+          <li><img src="images/ad3.jpg" /></li>
+          <li><img src="images/ad4.jpg" /></li>
+      </ul>
+   </div>
+</div>  <!-- ad结束   -->
+  <div class="main">
+     <div class="news">      <!--  news结束 -->
+         <div class="title">
+            <h2 class="title_left">新闻中心</h2><span class="title_right"><a href="new.html">More&gt;&gt;</a></span>
+         </div> <!-- title结束-->
+         <div class="pic_news">
+             <img src="images/news.jpg" />
+             <h2><a href="new.html">520 chy等你来女装!</a></h2>
+             <p>活动时间:5月20日-5月25日<br />
+                获奖公布时间:5月26日<br />
+               <a href="news.html"> Learn More&gt;&gt;</a>
+            </p>
+            </div> <!-- pic_news结束-->
+         <div class="news_list">
+             <ul>
+                 <li><a href="news.html">[慕课访谈 用户篇] chy之屌丝在路上</a><span class="date">2014-06-01</span></li>
+                 <li><a href="news.html">[有奖活动] 给wd爸爸的三行书信</a><span class="date">2014-06-01</span></li>
+                 <li><a href="news.html">"程序员，请秀出你的女装"活动获奖公告</a><span class="date">2014-05-30</span></li>
+                 <li><a href="news.html">[mooc访谈]破茧成蝶--屌丝chy的蜕变史</a><span class="date">2014-05-28</span></li>
+             </ul>
+         </div> <!-- news_list结束-->
+    </div> 
+     <div class="course">
+         <div class="title">
+             <h2 class="title_left">课程中心</h2><span class="title_right"><a href="news.html">More&gt;&gt;</a></span>
+         </div>  <!--title 结束-->
+         <div class="course_pic">
+               <img src="images/css.jpg" /><h2><a href="new.html">CHY牛逼进化论</a></h2><p>CHY牛逼的进化,经历的三个阶段:手写一个OJ系统,架构一个
+               后端nb的框架,实现了算法o(n的平方)到o(1)的进化.实在是太nb了,RBQRBQ,%%%%%.                   
+               </p>
+         </div> <!-- course_pic结束-->
+         <div class="course_type">
+             <ul>
+                 <li>PHP开发</li>
+                 <li>前端开发</li>
+                 <li>JAVA开发</li>
+                 <li>Android开发</li>
+             </ul>
+         </div> <!-- course_type结束-->
+     </div>     <!--  course结束 -->
+     <div class="sidebar">
+         <div class="video">
+             <div class="title"><h2 class="title_left">媒体聚焦</h2></div>
+             <div class="video_content"><embed src="http://player.youku.com/player.php/sid/XNjkzMDE5MTUy/v.swf" 
+                allowFullScreen="true" quality="high" width="220" height="140" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+            </div>
+         </div>  <!-- video结束-->
+         <div class="sidebar_ad">
+             <img src="images/app.jpg" />
+         </div> <!-- sidebar_ad结束-->
+     </div>    <!--  sidebar结束 -->
+  </div>        <!--  main结束 -->
+</div>  <!-- wrap结束 -->
+<div class="copyright">
+    <div class="copyright_content">
+        <ul>
+            <li><a href="#">关于</a>
+              <ul>
+                  <li><a href="#">品牌故事</a></li>
+                  <li><a href="#">联系我们</a></li>
+                  <li><a href="#">加入我们</a></li>
+                  <li><a href="#">版权声明</a></li>
+              </ul>
+            </li>
+            <li><a href="#">课程</a>
+               <ul> 
+                 <li><a href="#">PHP开发</a></li>
+                 <li><a href="#">前端开发</a></li>
+                 <li><a href="#">JAVA开发</a></li>
+                 <li><a href="#">Android开发</a></li>
+               </ul> 
+            </li>
+            <li><a href="#">留言</a>
+                <ul> 
+                  <li><a href="#">新浪微博</a></li>
+                  <li><a href="#">腾讯微博</a></li>
+                  <li><a href="#">企业微信</a></li>
+                  <li><a href="#">QQ空间</a></li>
+                </ul> 
+            </li>
+            <li><a href="#">关注</a>
+                <ul> 
+                  <li><a href="#">意见反馈</a></li>
+                  <li><a href="#">问题留言</a></li>
+                  <li><a href="#">媒体联络</a></li>
+                  <li><a href="#">在线客服</a></li>
+                </ul> 
+            </li>
+            <li><a href="#"><img src="images/weixin.png"  />微信关注</a>
+               <ul>
+                   <li><img src="images/qrcode.jpg" /></li>
+               </ul>
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+</body>
+</html>
